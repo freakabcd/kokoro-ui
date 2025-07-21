@@ -30,3 +30,14 @@ Start the server and enjoy generating audio from text inputs. The server should 
 ```
 python3 kokoro-ui.py
 ```
+
+For Apple Silicon devices (M 1/2/3/4), you should enable MPS_FALLBACK to make use of the GPU and faster generation.
+
+```
+PYTORCH_ENABLE_MPS_FALLBACK=1 python3 kokoro-ui.py
+```
+
+Alternatively, you can enable this always by adding this to your `~/.zshrc`
+```
+export PYTORCH_ENABLE_MPS_FALLBACK=1
+```
