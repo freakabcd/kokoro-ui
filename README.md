@@ -41,3 +41,12 @@ Alternatively, you can enable this always by adding this to your `~/.zshrc`
 ```
 export PYTORCH_ENABLE_MPS_FALLBACK=1
 ```
+
+If you want generate Japanese and Mandarin Chinese text to audio, you will need to install a few other dependencies.
+
+```
+pip install "misaki[en,ja,zh]"
+
+# dictionary
+python3 -m unidic download
+```
