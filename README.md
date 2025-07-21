@@ -2,7 +2,7 @@
 
 This repository contains an extremely simple gradio UI for playing with Kokoro-82M. The currently released Kokoro model is a very small model and can be used on a CPU for text-to-audio (T2A) generation.
 
-It should work without issues on Linux, MacOS and Windows. A working python3 installation is the more important prerequisite.
+It should work without issues on Linux, MacOS and Windows. A working python3 installation is the more important prerequisite. Do *not* use Python 3.13 as some of the dependencies (numpy, etc.) will be built from sources and may fail installation. Python 3.12 is recommended.
 
 ### How to run
 It is highly recommended to create/activate a conda or virtualenv environment. A venv flow is shown, you can execute the following commands on a shell/terminal:
@@ -16,7 +16,7 @@ cd kokoro-ui
 python3 -m venv .venv
 source .venv/bin/activate
 
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 Download the Kokoro model weights and voices. Please do not ignore this step as the languages and voices within the UI are dynamically filled from whatever is available from within the Kokoro release!
