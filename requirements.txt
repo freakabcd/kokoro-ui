@@ -1,1 +1,4 @@
 kokoro
+
+gradio
+soundfile
