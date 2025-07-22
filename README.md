@@ -50,3 +50,7 @@ pip install "misaki[en,ja,zh]"
 # dictionary
 python3 -m unidic download
 ```
+
+Without these dependencies, you are very likely to generate audio that literally speaks the type of character encountered. Here is a generation for `私のケーキ` that just speaks `Chinese letter, Japanese letter, Japanese letter, ...`
+
+[Literal speaking](https://cdn.jsdelivr.net/gh/freakabcd/kokoro-ui/cj_nodeps.mp3)
