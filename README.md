@@ -1,8 +1,8 @@
 # Kokoro-ui
 
-This repository contains an extremely simple gradio UI for playing with Kokoro-82M. The currently released Kokoro model is a very small model and can be used on a CPU for text-to-audio (T2A) generation.
+This repository contains an extremely simple gradio UI for playing with [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M). The currently released Kokoro model is a very small model and can be used on a CPU for text-to-audio (T2A) generation.
 
-It should work without issues on Linux, MacOS and Windows. A working python3 installation is the more important prerequisite. Do *not* use Python 3.13 as some of the dependencies (numpy, etc.) will be built from sources and may fail installation. Python 3.12 is recommended.
+It should work without issues on Linux, MacOS and Windows. A working python3 installation is the most important prerequisite. Do *not* use Python 3.13 as some of the dependencies (numpy, etc.) will be built from sources and may fail installation. Python 3.12 is recommended.
 
 ### How to run
 It is highly recommended to create/activate a conda or virtualenv environment. A venv flow is shown, you can execute the following commands on a shell/terminal:
@@ -65,3 +65,9 @@ python3 -m unidic download
 Without these dependencies, you are very likely to generate audio that literally speaks the type of character encountered. Here is a generation for `私のケーキ` that just speaks `Chinese letter, Japanese letter, Japanese letter, ...`
 
 [Literal speaking](https://cdn.jsdelivr.net/gh/freakabcd/kokoro-ui/cj_nodeps.mp3)
+
+
+---
+If you appreciate my work and would like to buy me a coffee, please click on the link below.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/freakabcd)
