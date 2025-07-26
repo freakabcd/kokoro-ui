@@ -42,12 +42,23 @@ Alternatively, you can enable this always by adding this to your `~/.zshrc`
 export PYTORCH_ENABLE_MPS_FALLBACK=1
 ```
 
+### Japanese and Mandarin Chinese
 If you want generate Japanese and Mandarin Chinese text to audio, you will need to install a few other dependencies.
 
 ```
 pip install "misaki[en,ja,zh]"
+```
 
+A full unidic installation is not needed. You can simply uninstall `unidic` and install `unidic-lite`
+```
 # dictionary
+pip uninstall unidic
+pip install unidic-lite
+```
+
+Alternatively, you can download the data for unidic (approx 500+ MB) by running this command
+```
+# unidic data download
 python3 -m unidic download
 ```
 
